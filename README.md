@@ -1,14 +1,10 @@
 # lab01-iac-jueves
 
-Bienvenidos a IAC, el dia de hoy VAMOS A DESARROLLAR LA SIGUIENTE ACTIVIDAD:
+Bienvenidos a IAC, en esta actividad se desarrolló lo siguiente:
 
-Tenemos código de una aplicación web. Se compone por un archivo HTML que tiene como contenido: WEB01
-
-Quiero poder publicar esta web, especificamente una sola copia como primera instancia
-
-- Desplegar dos web, mostrar Web01, y Web02 como contenido
-- Los puertos deben estar configurados en 4000 y 4001
-- Gestionar carpetas para orden
-- Hacer uso de Gitflow/Conventional Commits
-
-En mi caso lo desarrollaré en la branch de feature/readme
+1. creación de la carpeta api dentro de src, en esa carpeta incluimos un Dockerfile y un index.js
+en la carpeta colocamos los codigos, y luego se ejecutan los siguientes comandos para el Dockerfile:
+# docker build -t lab/api .
+# docker run -p 3000:3000 lab/api
+Luego, se ejecutan los siguientes para index.js:
+# node index.js
